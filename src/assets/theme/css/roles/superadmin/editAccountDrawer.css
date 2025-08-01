@@ -1,0 +1,25 @@
+.edit-account-drawer .ant-drawer-body {
+  padding: 24px;
+}
+
+.drawer-input-group {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.role-select {
+  width: 100%;
+}
+
+.drawer-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

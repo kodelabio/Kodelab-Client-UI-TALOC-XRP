@@ -1,0 +1,246 @@
+.report-modal {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 15px;
+    background: var(--white-bg, #FFF);
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-close-btn {
+    cursor: pointer;
+    align-self: flex-end;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal-title h3 {
+    color: var(--Black-text, #1C1C1C);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal-section {
+    align-self: flex-start;
+}
+
+.modal-section p {
+    color: #6C6C6C;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px !important;
+}
+
+.chip-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Grey-100, #D4D4D4);
+    background: var(--white-bg, #FFF);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chip:hover {
+    border-color: var(--secondary-color);
+}
+
+.chip-selected {
+    border-color: var(--secondary-color);
+}
+
+.modal-btn {
+    cursor: pointer;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: var(--primary-gradient);
+}
+
+.modal-btn p {
+    margin-bottom: 0px;
+    color: #F9FFFD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.modal-btns-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.save-btn {
+    cursor: pointer;
+    display: flex;
+    min-width: 160px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid var(--secondary-color);
+    background: #FFF;
+}
+
+.save-btn p {
+    margin-bottom: 0px;
+    color: #2B2B2B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+.data-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.data-table th {
+    border: 1px solid #ddd;
+    background-color: #E8F6FE;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.data-table td {
+    border: 1px solid #ddd;
+    padding: 25px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner img {
+    width: 100%;
+    height: 100%;
+}
+
+.hash-wrapper {
+    margin-top: -20px;
+    color: var(--Black-text, #1C1C1C);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .modal-btn p {
+        font-size: 15px;
+    }
+
+    .save-btn {
+        min-width: 140px;
+    }
+
+    .save-btn p {
+        font-size: 15px;
+    }
+
+    .data-table th,
+    .data-table td {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .data-table {
+        width: 100%;
+    }
+    .hash-wrapper {
+        margin-top: -20px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+}
+
+@media (max-width: 460px) {
+
+    .ant-modal-body {
+        padding: 16px 5px;
+    }
+    
+
+}

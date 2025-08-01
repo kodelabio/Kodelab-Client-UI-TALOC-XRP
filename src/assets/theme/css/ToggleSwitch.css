@@ -1,0 +1,31 @@
+.custom-toggle-switch {
+  background-color: #f8f8f8;
+  border-radius: 999px;
+  padding: 8px 6px;
+  gap: 24px;
+}
+
+/* Hide the vertical dividers */
+.custom-toggle-switch .ant-segmented-item:not(:last-child) {
+  border-right: none !important;
+}
+
+/* Increase spacing between items */
+.custom-toggle-switch .ant-segmented-item {
+  margin: 0 8px;
+  border: none !important;
+}
+
+/* Style for active (selected) item */
+.custom-toggle-switch .ant-segmented-item-selected {
+  background-color: white;
+  color: #154ec1;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* General item styling */
+.custom-toggle-switch .ant-segmented-item-label {
+  font-size: 16px;
+  border-radius: 20px;
+}

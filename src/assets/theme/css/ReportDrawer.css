@@ -1,0 +1,37 @@
+/* Optional: Smooth transitions */
+.custom-report-drawer .ant-drawer-content-wrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Customize header/title style */
+.custom-report-drawer .ant-drawer-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Optional: Add padding or background to content area */
+.custom-report-drawer .ant-drawer-body {
+  background-color: #fafafa;
+  padding: 16px;
+}
+
+.custom-report-drawer .ant-drawer-content-wrapper {
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-report-drawer .ant-drawer-header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.custom-report-drawer .ant-drawer-body {
+  background-color: #fafafa;
+  padding: 16px;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}

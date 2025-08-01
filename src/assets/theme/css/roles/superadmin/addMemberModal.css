@@ -1,0 +1,47 @@
+.ant-modal-body {
+  /* background-color: #fff; */
+  /* border-radius: 16px; */
+  padding: 0 !important;
+}
+
+.add-member-modal .label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.role-select {
+  min-width: 130px;
+}
+
+.email-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.email-tag {
+  background-color: #e6f4ff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.email-tag .remove {
+  cursor: pointer;
+  color: #555;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

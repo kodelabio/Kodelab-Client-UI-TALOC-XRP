@@ -1,0 +1,180 @@
+/* Report Dashboard Styles */
+.report-dashboard {
+  min-height: 100vh;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+.ant-table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background-color: white;
+  font-weight: 600;
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-table-tbody > tr > td {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-table-tbody > tr:hover {
+  cursor: pointer;
+}
+
+/* Status styles */
+.status-verified {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #e6f7e9;
+  color: #52c41a;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+.status-not-verified {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  color: #8c8c8c;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+/* Modal styles */
+.details-table-container {
+  margin: 20px 0;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.details-table thead {
+  background-color: #f0f7ff;
+}
+
+.details-table th,
+.details-table td {
+  padding: 16px;
+  text-align: left;
+  border: none;
+  border: 1px solid #000;
+}
+
+.hash-link {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.verify-button {
+  background-color: #1e4db7;
+  border: none;
+  padding: 8px 32px;
+  height: auto;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.download-button {
+  background-color: #f0f7ff;
+  color: #1e4db7;
+  border: 1px solid #1e4db7;
+  padding: 8px 32px;
+  height: auto;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.verifying-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+/* Pagination styles */
+.ant-pagination {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.ant-modal-content {
+  border-radius: 16px;
+  background-color: #ffffff !important;
+}
+
+.ant-modal-header {
+  display: block !important;
+}
+
+/* Responsive padding for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust other elements for mobile */
+  .search-input {
+    max-width: 100%;
+  }
+
+  .details-table th,
+  .details-table td {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .verify-button,
+  .download-button {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Even smaller screens like phones */
+@media screen and (max-width: 480px) {
+  .ant-table-thead > tr > th {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .ant-table-tbody > tr > td {
+    padding: 6px;
+    font-size: 12px;
+  }
+}
+
+/* Add these styles for text truncation */
+.truncate-text {
+  max-width: 200px; /* Adjust based on your needs */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Make it responsive */
+@media screen and (max-width: 768px) {
+  .truncate-text {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .truncate-text {
+    max-width: 100px;
+  }
+}

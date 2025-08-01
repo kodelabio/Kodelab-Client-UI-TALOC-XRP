@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #f9f9f9;
+  --svg-filter: invert(0);
+  --accent-color: #434343;
+
+  --background-color: #ffffff;
+  --background-secondary-color: #f8f9fa;
+
+  --text-color: #212529;
+  --text-muted: #6c757d;
+
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+}
+
+[data-theme='clientAdmin'] {
+  --primary-color: #ffffff;
+  --secondary-color: #498fec;
+  --primary-gradient: linear-gradient(90deg, #003da6 0%, #2669dc 100%);
+  --svg-filter: invert(1);
+  --accent-color: #434343;
+  --color-filter: invert(13%) sepia(89%) saturate(1846%) hue-rotate(210deg) brightness(91%)
+    contrast(102%);
+}
+
+[data-theme='FCATheme'] {
+  --primary-color: rgba(108, 29, 69, 1);
+  --secondary-color: #882256;
+  --svg-filter: invert(1);
+  --accent-color: #434343;
+  --color-filter: invert(14%) sepia(60%) saturate(500%) hue-rotate(315deg) brightness(80%)
+    contrast(15%);
+  --primary-gradient: rgba(108, 29, 69, 1);
+}
+
+[data-theme='kodelabTheme'] {
+  --primary-color: #ffffff;
+  --secondary-color: #0c4fad;
+  --svg-filter: invert(1);
+  --accent-color: #434343;
+  --color-filter: invert(47%) sepia(91%) saturate(2011%) hue-rotate(175deg) brightness(100%)
+    contrast(102%);
+}

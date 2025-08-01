@@ -1,0 +1,259 @@
+.reset-btn-wrap {
+  cursor: pointer;
+  display: flex;
+  width: 140px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 2px solid var(--secondary-color);
+  background: #fff;
+  color: #2b2b2b;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.reset-btn-wrap:hover {
+  background: #f3faf8;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 50%; */
+  align-self: center;
+}
+
+.cancel-btn-wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 46px;
+  border-radius: 30px;
+  margin-right: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.cancel-btn-text {
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cancel-btn-wrap:hover {
+  background: #f3faf8;
+}
+
+.vault-header {
+  padding: 15px 0;
+  display: flex;
+}
+
+.header-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d9;
+}
+
+.title-user-name {
+  color: #6f6f6f;
+  font-family: 'Lato';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.vault-heade-title {
+  display: flex;
+  align-items: center;
+}
+
+.vault-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heade-title-text {
+  color: #2b2b2b;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.vault-heade-title-text {
+  font-family: 'Lato';
+  font-weight: 600;
+  line-height: 38px;
+  padding-right: 5px;
+}
+
+.vault-header-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.borrow-btn-wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 46px;
+  border-radius: 30px;
+  margin-right: 5px;
+  background-color: var(--secondary-color);
+}
+
+.borrow-btn {
+  color: #f9fffd;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.borrow-btn-wrap:hover {
+  background: var(--secondary-color);
+  color: black;
+}
+
+.pay-btn-wrap {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 46px;
+  border-radius: 30px;
+  border: 2px solid var(--secondary-color);
+  background: #fff;
+}
+
+.pay-btn {
+  color: rgba(43, 43, 43, 1);
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.pay-btn-wrap:hover {
+  background: #f3faf8;
+}
+
+@media (max-width: 1258px) {
+  .vault-heade-title-text {
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  .borrow-btn-wrap {
+    width: 106px;
+    height: 38px;
+  }
+
+  .pay-btn-wrap {
+    width: 106px;
+    height: 38px;
+  }
+  .reset-btn-wrap {
+    width: 106px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .cancel-btn-wrap {
+    width: 106px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .pay-btn,
+  .borrow-btn {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .vault-heade-title {
+    width: 100%;
+  }
+  .title-user-name {
+    font-size: 14px;
+  }
+  .heade-title-text {
+    font-size: 14px;
+  }
+  .title-container {
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .borrow-btn-wrap {
+    width: 90px;
+    font-size: 16px;
+  }
+  .reset-btn-wrap {
+    width: 90px;
+    font-size: 16px;
+  }
+  .pay-btn-wrap {
+    width: 90px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 330px) {
+  .borrow-btn-wrap {
+    width: 80px;
+    font-size: 14px;
+  }
+  .reset-btn-wrap {
+    width: 80px;
+    font-size: 14px;
+  }
+  .pay-btn-wrap {
+    width: 80px;
+    font-size: 14px;
+  }
+  .pay-btn {
+    font-size: 14px;
+  }
+  .borrow-btn {
+    font-size: 14px;
+  }
+}

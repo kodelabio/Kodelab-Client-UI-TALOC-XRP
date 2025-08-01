@@ -1,0 +1,44 @@
+.remove-team-modal .ant-modal-content {
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.modal-message {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.modal-subtext {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cancel-btn {
+  border: 1.5px solid #4686ef;
+  border-radius: 999px;
+  color: #4686ef;
+  padding: 4px 24px;
+  background: white;
+}
+
+.remove-btn {
+  background-color: #e1574e;
+  border-radius: 999px;
+  color: white;
+  padding: 4px 24px;
+  border: none;
+}

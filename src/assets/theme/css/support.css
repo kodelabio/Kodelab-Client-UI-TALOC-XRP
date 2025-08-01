@@ -1,0 +1,678 @@
+br {
+    display: block;
+    margin: 1px 0;
+}
+
+::marker {
+    display: none;
+}
+
+/* ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    width of vertical scrollbar
+    border: 1px solid #d5d5d5;
+} */
+
+.approve-manager {
+    margin: 15px auto;
+    width: 100%;
+}
+.messageBody{
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+
+.chat-window {
+    height: 85vh;
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.input-wrapper {
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+
+}
+
+.messgae-card-user {
+    background: #EAF6F7;
+    padding: 10px 10px 10px 10px;
+    inline-size: auto;
+    color: #1e1e1e;
+    border-radius: 20px 20px 0px 20px;
+    display: flex;
+    margin-right: 5px;
+    hyphens: auto;
+    white-space: pre-line;
+    margin-bottom: 10px;
+}
+
+.messgaeCard {
+    margin-right: 5px;
+    background: #ffffff;
+    border: 1px solid #f5f5f5;
+    padding: 10px;
+    hyphens: auto;
+    white-space: pre-line;
+    inline-size: auto;
+    align-items: center;
+    display: flex;
+    border-radius: 0px 20px 20px 20px;
+   
+}
+.messgaeCard-wrap{
+   
+    display: block;
+}
+
+.logo-1 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-button {
+    height: 48px;
+    cursor: pointer;
+}
+
+.img-button:hover {}
+
+.img-button:active {
+    -webkit-filter: grayscale;
+    /*sepia, hue-rotate, invert....*/
+    -webkit-filter: brightness(95%);
+
+}
+
+
+
+.logo-animation {
+    height: 40vh;
+    border-radius: 100%;
+    align-content: "center";
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.menu-button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    gap: 2px;
+    padding: 7px 14px 7px 10px;
+    height: 34px;
+    /* white */
+    border-radius: 20px;
+    flex-direction: row;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 19px;
+    gap: 4px;
+
+    width: 261px;
+    height: 34px;
+
+    /* white */
+
+    background: #ffffff;
+    /* stroke */
+
+    border: 1px solid #ebebeb;
+    border-radius: 35px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.button-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.messageBox li:nth-of-type(odd) {
+    align-self: self-end;
+    max-width: 80%;
+}
+
+.card {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: blue;
+}
+
+.sub-tit {
+    padding: 6px 0 20px;
+}
+
+.token-list {
+    border-top: 1px dashed #eee;
+}
+
+.token {
+    line-height: 60px;
+}
+
+/* &+.token {
+    border-top: 1px solid #eee;
+} */
+
+
+.text-area {
+    padding-left: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textarea {
+    box-sizing: border-box;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    font-family: "Lato";
+    padding-top: 15px;
+    align-self: stretch;
+
+
+}
+
+.textarea-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.titleLucy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titleLucy p {
+    color: var(--text, #111);
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chat-button {
+    margin-left: 10px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 17px 16px 16px 17px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+}
+
+.chat-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 32px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+}
+
+.submit {
+    width: 100px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 24px;
+    background-color: #2ea8af;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.col {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.chatCol {
+
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+
+.create-avatar-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* // btn style start */
+.avatar-link-btn-text {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.avatar-link-btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
+.avatar-link-btn-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-link-btn {
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+    width: 86px;
+    height: 44px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar-link-btn-wrap {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* // btn style end */
+
+/* // popup style start */
+.popup-create-avatar_selected {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.14);
+    width: 183px;
+    height: 284px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: none;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -290px;
+
+}
+
+.popup-create-avatar_Unselected {
+    display: none;
+}
+
+.popup-create-avatar-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-create-avatar-img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* .popup-create-avatar-img {
+    width: 51px;
+    height: 51px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 3px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+} */
+
+.popup-create-avatar-img:nth-child(1) {
+    margin-top: 20px;
+}
+
+.popup-create-avatar-img:nth-child(3) {
+    margin-top: 20px;
+}
+
+.popup-create-avatar-img:nth-child(5) {
+    margin-top: -15px;
+}
+
+/* .popup-create-avatar-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    margin-bottom: 44px;
+
+    h2 {
+        color: #181818;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+    }
+} */
+
+.small-btn-popup-create-avatar {}
+
+.popup-avatar-btn {
+    border-radius: 30px;
+    z-index: 12;
+    background: #fff;
+    width: 78px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #100cd8;
+    cursor: pointer;
+}
+
+.popup-create-avatar-btn {
+    color: #141414;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* // popup style end */
+
+@media (max-width:900px) {
+
+    .messageBox {
+        width: 100%;
+    }
+
+    .chat-window {
+        width: 100% !important;
+    }
+
+    .messgae-card-user {
+      
+        white-space: pre-line;
+        hyphens: auto;
+        inline-size: 80%;
+        width: auto;
+        padding: 5px 5px 5px 5px;
+       
+    }
+
+    .messgaeCard {
+     
+        white-space: pre-line;
+        hyphens: auto;
+        inline-size: 80%;
+        width: auto;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .sub-tit {
+        /* // flex-direction: column;
+        // justify-content: space-between;
+        // align-items: flex-start; */
+        flex-wrap: wrap;
+    }
+
+    .address {
+        font-size: 12px;
+    }
+
+    .col {
+        padding-top: 6px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .titleLucy {
+        text-align: center;
+    }
+
+    .img-button {
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .inputBox {
+        width: 100%;
+        /* // margin-top: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-animation {
+        width: 250px;
+        height: 250px;
+    }
+
+    .avatar-link-btn {
+        position: absolute;
+        top: -70px;
+        right: 0px;
+    }
+
+    .popup-create-avatar_selected {
+        top: -360px;
+        right: -5px;
+    }
+
+    .chat-button {
+        margin: 0px 5px;
+    }
+
+
+    .text-area {
+        width: 100%;
+    }
+
+    .textarea {
+        box-sizing: border-box;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        resize: none;
+        outline: none;
+        font-family: "Lato";
+        padding: 10px 10px;
+        /* // padding-right: 90px;
+        // white-space: normal;
+        // text-align: justify;
+        // -moz-text-align-last: center; 
+        // text-align-last: center; */
+    }
+
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/* @media (max-width:900px) {
+    .messageBox {
+        width: 100%;
+    }
+
+    .chat-window {
+        width: 100% !important;
+    }
+
+    .messgae-card-user {
+
+        white-space: pre-line;
+        hyphens: auto;
+        inline-size: 80%;
+        width: auto;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .messgaeCard {
+
+        white-space: pre-line;
+        hyphens: auto;
+        inline-size: 80%;
+        width: auto;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .titleLucy {
+        text-align: center;
+    }
+
+    .img-button {
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .inputBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-animation {
+        width: 250px;
+        height: 250px;
+    }
+
+    .avatar-link-btn {
+        position: absolute;
+        top: -70px;
+        right: 0px;
+    }
+
+    .popup-create-avatar_selected {
+        top: -360px;
+        right: -5px;
+    }
+
+    .chat-button {
+        margin: 0px 5px;
+    }
+
+    .text-area {
+        width: 100%;
+
+    }
+
+    .text-area textarea {
+        box-sizing: border-box;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        resize: none;
+        outline: none;
+        font-family: "Artifakt";
+        padding: 10px 10px;
+
+    }
+
+} */

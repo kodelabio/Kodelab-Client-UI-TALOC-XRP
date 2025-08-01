@@ -1,0 +1,380 @@
+.transparent {
+  height: 100%;
+}
+
+/* .sidemenu {
+    padding-top: 15px;
+   
+} */
+.side-menu {
+  /* margin-top: 10px; */
+}
+
+.side-menu-container {
+  background: var(--primary-color);
+  box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.11);
+  width: 269px;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menu-container-bank-open {
+  background: var(--primary-color);
+  box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.11);
+  width: 269px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: all 0.6s ease-out;
+}
+
+.side-menu-container-bank-close {
+  background: var(--primary-color);
+  box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.11);
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: all 0.6s ease-out;
+}
+
+.side-menu-container-bank-client {
+  background: #114080;
+  box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.11);
+  width: 269px;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.6s ease-out;
+  margin: 16px;
+}
+
+.side-menu-logo {
+  /* margin-top: 36px; */
+  width: 102px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 60px; */
+}
+
+.closed-side-menu-logo {
+  margin-top: 36px;
+  margin-bottom: 60px;
+  width: 102px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closed-logo {
+  width: 50%;
+}
+
+.side-btn-wrapper {
+  height: 73%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.side-menu-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-menu-btn-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  width: 100%;
+  padding-left: 36px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.side-menu-btn-img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.mob-menu-btn-img {
+  display: none;
+  width: 21px;
+  height: 21px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mob-menu-btn-img img {
+  width: 100%;
+  height: 100%;
+  filter: none;
+}
+.side-menu-btn-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.side-menu-btn-text {
+  color: #d4d4d4;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.side-menu-container-bank-client .side-menu-btn-text {
+  color: #b3b3b3;
+}
+
+/* For the client sidebar */
+.side-menu-container-bank-client .side-menu-btn-wrap:hover .side-menu-btn-img img,
+.side-menu-container-bank-client .side-menu-btn-wrap:hover .mob-menu-btn-img img {
+  filter: brightness(0) invert(1);
+}
+
+.side-menu-container-bank-client .side-menu-btn-wrap:hover .side-menu-btn-text {
+  color: #fcfcfc !important;
+}
+
+/* For other sidebars */
+.side-menu-btn-wrap:hover .side-menu-btn-img img,
+.side-menu-btn-wrap:hover .mob-menu-btn-img img {
+  filter: invert(1);
+}
+
+.side-menu-btn-wrap:hover .side-menu-btn-text {
+  color: #434343;
+}
+/* here css for side-button, when special tab selected */
+
+.side-selected::after {
+  content: '';
+  width: 10px;
+  height: 40px;
+  border-radius: 10px 0px 0px 10px;
+  background: #434343;
+  display: block;
+  background-size: cover;
+  z-index: 10;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.side-menu-container-bank-client .side-selected::after {
+  background: #fcfcfc;
+}
+
+.side-menu-mobile {
+  display: none;
+}
+
+.mob-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+
+  position: relative;
+}
+
+.mob-logo {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.side-menu-mobile {
+  flex-direction: column;
+}
+
+.open-side-nav {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+}
+
+.open-side-nav:hover {
+  cursor: pointer;
+}
+
+.side-selected .side-menu-btn-text {
+  color: #434343;
+}
+
+.side-menu-container-bank-client .side-selected .side-menu-btn-text {
+  color: #fcfcfc;
+}
+
+.side-selected .side-menu-btn-img {
+  filter: invert(1);
+}
+
+.side-menu-container-bank-client .side-selected .side-menu-btn-img {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 900px) {
+  .side-menu-btn-img {
+    display: none;
+  }
+  .mob-menu-btn-img {
+    display: flex;
+  }
+  .transparent {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  .side-menu {
+    display: none;
+  }
+
+  .side-menu-mobile {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-menu-logo {
+    /* display: none; */
+  }
+
+  .side-menu-container {
+    width: 230px;
+    /* height: fit-content; */
+    height: auto;
+    border-radius: 15px;
+    background: #f3f3f3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 0px 10px 20px;
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  }
+  .side-menu-container-bank {
+    width: 230px;
+    /* height: fit-content; */
+    height: auto;
+    border-radius: 15px;
+    background: #f3f3f3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 0px 10px 20px;
+    position: absolute;
+    right: 15px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .side-menu-btn-wrap {
+    padding: 0px;
+    justify-content: baseline;
+  }
+
+  .main-btn-wrap {
+    padding: 10px 0px 0px 10px;
+  }
+
+  .side-menu-close-btn {
+    margin-bottom: 10px;
+  }
+
+  .side-selected::after {
+    width: 8px;
+    height: 30px;
+    background: #505050;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+  }
+
+  .side-menu-btn-img {
+    display: none;
+  }
+
+  .side-menu-btn-text {
+    margin-bottom: 0px !important;
+    color: #d4d4d4;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .side-menu-btn-text:hover {
+    color: #434343;
+  }
+}
+
+.disabled-menu-item {
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Optional: Add a tooltip to explain why it's disabled */
+.disabled-menu-item {
+  position: relative;
+}
+
+.disabled-menu-item:hover::after {
+  content: 'Not available for your role';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-left: 10px;
+  z-index: 1000;
+}
+.side-menu-btn-img img,
+.mob-menu-btn-img img,
+.side-menu-btn-text {
+  transition: all 0.2s ease-in-out;
+}

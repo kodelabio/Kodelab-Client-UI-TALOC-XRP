@@ -1,0 +1,206 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_party",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_content",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_hash",
+				"type": "string"
+			}
+		],
+		"name": "createDocument",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "docId",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "party",
+				"type": "address"
+			}
+		],
+		"name": "DocumentCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "docId",
+				"type": "uint256"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "verifier",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			}
+		],
+		"name": "DocumentVerified",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_docId",
+				"type": "uint256"
+			}
+		],
+		"name": "verifyDocument",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_docId",
+				"type": "uint256"
+			}
+		],
+		"name": "getDocument",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "docId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "party",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "content",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "creatorVerifiedAt",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "partyVerifiedAt",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_creator",
+				"type": "address"
+			}
+		],
+		"name": "getDocumentsByCreator",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_party",
+				"type": "address"
+			}
+		],
+		"name": "getDocumentsByParty",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getNextDocId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nextDocId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

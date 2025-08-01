@@ -1,0 +1,23 @@
+module.exports = {
+  printWidth: 100,
+  singleQuote: true,
+  trailingComma: 'all',
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  // parser: 'babylon',
+  proseWrap: 'preserve',
+  semi: false,
+  plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
+  importOrder: [
+    '^./pollyfills',
+    '^antd',
+    '^[./]',
+    '^vite',
+    '^react',
+    '<THIRD_PARTY_MODULES>',
+    'components/',
+    'pages/',
+    'hooks/',
+    'utils/',
+  ],
+}
